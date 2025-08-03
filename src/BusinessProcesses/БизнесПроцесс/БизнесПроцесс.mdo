@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:BusinessProcess xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0fa2c81b-2756-40db-b22e-83878da52854">
+  <producedTypes>
+    <objectType typeId="1810291a-cb5b-4ca2-bf73-b15ae3ea5228" valueTypeId="4c95f2b8-83bb-4d41-9572-a8628ca33ab8"/>
+    <refType typeId="ab26532a-c8b6-4c33-82fa-cc839418c101" valueTypeId="f1d8ecb7-9d7c-46d9-baba-0f5a4e957867"/>
+    <selectionType typeId="ff625cb3-bfc6-4c4d-9241-b54be45b0b41" valueTypeId="8f3060a5-fde9-448f-a5bf-5e257ed130f6"/>
+    <listType typeId="e7f0cec1-f77c-46e6-be5e-ff47f77c441a" valueTypeId="0a0f598c-c0b9-4e7b-b8e8-531f09f7aa4e"/>
+    <managerType typeId="7d9b5d32-c937-4cc1-b340-a193121d1bef" valueTypeId="fbe1ed94-70aa-4bd6-8630-911dcdbc533c"/>
+    <routePointRef typeId="08273ca9-74d8-4972-9850-1bd001e618ce" valueTypeId="039d1680-a0f0-4340-be8a-b1a7d6b2760b"/>
+  </producedTypes>
+  <name>БизнесПроцесс</name>
+  <synonym>
+    <key>ru</key>
+    <value>Бизнес процесс</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>BusinessProcess.БизнесПроцесс.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <editType>InDialog</editType>
+  <defaultObjectForm>BusinessProcess.БизнесПроцесс.Form.ФормаБизнесПроцесса</defaultObjectForm>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <task>Task.Задача</task>
+  <createTaskInPrivilegedMode>true</createTaskInPrivilegedMode>
+  <attributes uuid="140fa85a-678c-4eac-a365-6aad5eccd277">
+    <name>ОплатаНаличными</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оплата наличными</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="d1d8cbb5-f231-4d56-a251-a90efa1afb48">
+    <name>ФормаБизнесПроцесса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма бизнес процесса</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:BusinessProcess>

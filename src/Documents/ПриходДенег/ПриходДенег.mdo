@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="61092cbb-983d-471f-8e4b-b51cabb6aac5">
+  <producedTypes>
+    <objectType typeId="436dbbd7-0f16-4933-913a-3b8907b9f87c" valueTypeId="ef40691d-aafb-4ac3-b5bc-1d97bcb18c00"/>
+    <refType typeId="3d3999bf-078b-4e0a-bb20-090121c57594" valueTypeId="fba118cc-e8f2-431a-b117-68a6575bb0f4"/>
+    <selectionType typeId="40fb012a-ae40-403f-9b5c-ac1777db5836" valueTypeId="f3decf79-b60d-4712-88d1-8cd27783ce9b"/>
+    <listType typeId="e1b5fc71-7046-4140-860d-a9886a1b3a46" valueTypeId="e8ee2435-f167-4495-8c5d-016ec27c7608"/>
+    <managerType typeId="f3a26f3a-f560-42ec-81c0-d6fda8e513d9" valueTypeId="127005b7-b7c5-47c2-9175-93bb4e4c2aaa"/>
+  </producedTypes>
+  <name>ПриходДенег</name>
+  <synonym>
+    <key>ru</key>
+    <value>Приход денег</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ПриходДенег.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <registerRecords>AccumulationRegister.Взаиморасчеты</registerRecords>
+  <registerRecords>AccountingRegister.Управленческий</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="c7203dd9-7722-4bb5-a2a1-02a0ff11a4b2">
+    <name>СуммаОплаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма оплаты</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>12</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="90162858-7840-4d7c-8a49-ed9a93690e5c">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="736ae4f6-e2d3-4af3-94be-0c5566973a34">
+    <producedTypes>
+      <objectType typeId="1f206a60-833a-4fdf-bd12-6880db9bac66" valueTypeId="3c3d2c88-fd7b-4675-9363-5d41321b1a14"/>
+      <rowType typeId="09cf68c3-abcf-4d20-a8e9-cdad11b94103" valueTypeId="6bf0ac9a-31a8-4e19-9da1-ec142599b50c"/>
+    </producedTypes>
+    <name>Накладные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Накладные</value>
+    </synonym>
+    <attributes uuid="9695ec20-f0c1-4004-8a0d-85f8ab025dc0">
+      <name>Накладная</name>
+      <synonym>
+        <key>ru</key>
+        <value>Накладная</value>
+      </synonym>
+      <type>
+        <types>DocumentRef.РасходнаяНакладная</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>
