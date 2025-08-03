@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="756815a1-2e76-46bf-9c47-480f794507ed">
+  <producedTypes>
+    <objectType typeId="f9fd23e9-c55f-40b4-a491-fb09b16c3d46" valueTypeId="31e97c81-5821-4ca9-bad8-8bb848cde552"/>
+    <managerType typeId="2f21e822-6518-4d57-a88a-b472be17a770" valueTypeId="06700b85-964f-4d0f-8c83-1795cf7bcd9b"/>
+  </producedTypes>
+  <name>КорректировкаЗадолженности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Корректировка задолженности</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.КорректировкаЗадолженности.Form.Форма</defaultForm>
+  <forms uuid="e9eff4b1-fe0e-40cf-b62d-49fcf776eb8b">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

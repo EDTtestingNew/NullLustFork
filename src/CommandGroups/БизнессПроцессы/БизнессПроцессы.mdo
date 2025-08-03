@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommandGroup xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6c941986-0c0f-4925-81ba-611268a3766b">
+  <name>БизнессПроцессы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Бизнесс процессы</value>
+  </synonym>
+  <representation>Auto</representation>
+</mdclass:CommandGroup>
